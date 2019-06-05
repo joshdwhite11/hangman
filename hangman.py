@@ -1,15 +1,21 @@
 from random_word import RandomWords
 
+#Fetches random word
 r = RandomWords()
-word =list(r.get_random_word(hasDictionaryDef = "true", minLength=5, maxLength=15).lower())
+word =list(r.get_random_word(hasDictionaryDef = "true", minLength = 5, maxLength = 15).lower())
+
+#Deletes any hyphens
 for i in word:
     if i == "-":
         word.remove(i)
 word = "".join(word)
 
+#Creates guess string with length of the word
 guess = list("_" * len(word))
 
-tries = int(input("Welcome! How many tries do you want? ")) #Try counter
+#Try counter
+tries = int(input("Welcome! How many tries do you want? "))
+print("")
 
 usedcorrect = ""
 usedtotal = ""
