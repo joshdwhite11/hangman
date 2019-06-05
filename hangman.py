@@ -1,3 +1,4 @@
+#Must install random_word and import
 from random_word import RandomWords
 
 #Fetches random word
