@@ -15,8 +15,11 @@ word = "".join(word)
 guess = list("_" * len(word))
 
 #Try counter
-tries = int(input("Welcome! How many tries do you want? "))
 print("")
+print("************************************")
+print("Welcome! How many tries do you want?")
+print("************************************")
+tries = int(input(""))
 
 usedcorrect = ""
 usedtotal = ""
