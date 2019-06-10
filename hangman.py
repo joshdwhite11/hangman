@@ -24,6 +24,7 @@ tries = int(input(""))
 usedcorrect = ""
 usedtotal = ""
 
+print("")
 print("Your word has", len(word), "letters.")
 while tries >= 1 and word != "".join(guess):
     print("Your guess is: ", "".join(guess))
@@ -51,7 +52,7 @@ while tries >= 1 and word != "".join(guess):
             if rightcounter == 0:
                 tries = tries - 1
                 print("***********************************************************")
-                print("That is not a correct letter, sorry. You have", tries, "tries left")
+                print("That is not a correct letter, sorry. You have", tries, "tries left.")
                 print("You have used the letters:", usedtotal)
             else:
                 print("***********************************************************")
